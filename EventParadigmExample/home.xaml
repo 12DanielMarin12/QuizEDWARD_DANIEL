@@ -16,10 +16,10 @@
         <TextBox Name="txtProductName" HorizontalAlignment="Left" Height="24" Margin="102,86,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="139"/>
         <Label Name="lblCategory" Visibility="Hidden" Content=" " HorizontalAlignment="Left" Margin="18,188,0,0" VerticalAlignment="Top"/>
 
-        <CheckBox Name="che1" Content="juegos gratis" HorizontalAlignment="Left" Height="18" Margin="107,116,0,0" VerticalAlignment="Top" Width="134" />
-        <CheckBox Name="che2" Content="juegos pagos" HorizontalAlignment="Left" Height="17" Margin="107,134,0,0" VerticalAlignment="Top" Width="106" />
+        <CheckBox Name="che1" Content="juegos gratis" HorizontalAlignment="Left" Height="18" Margin="107,116,0,0" VerticalAlignment="Top" Width="134" Checked="che1_Checked" />
+        <CheckBox Name="che2" Content="juegos pagos" HorizontalAlignment="Left" Height="17" Margin="107,134,0,0" VerticalAlignment="Top" Width="106" Checked="che2_Checked"/>
 
-        <TextBox Name="pres" HorizontalAlignment="Left" Margin="222,181,0,0" Text="{Binding Value, ElementName=slValue, UpdateSourceTrigger=PropertyChanged}" DockPanel.Dock="Right" TextAlignment="Right" Width="36" TextWrapping="Wrap" VerticalAlignment="Top" />
+        <TextBox Name="pres" HorizontalAlignment="Left" Margin="222,181,0,0" Text="{Binding Value, ElementName=slValue, UpdateSourceTrigger=PropertyChanged}" DockPanel.Dock="Right" TextAlignment="Right" Width="36" TextWrapping="Wrap" VerticalAlignment="Top" TextChanged="TextBox_TextChanged" />
         <Slider x:Name="slValue" Maximum="1000" TickPlacement="BottomRight" TickFrequency="5" IsSnapToTickEnabled="True" HorizontalAlignment="Left" Margin="102,181,0,0" VerticalAlignment="Top" Width="120" />
         <Calendar HorizontalAlignment="Right" Height="164" Margin="0,73,44,0" VerticalAlignment="Top" Width="191" RenderTransformOrigin="-0.362,0.475"/>
         <Label Name="shuchu" Content="" Visibility="Hidden" HorizontalAlignment="Left" Height="25" Margin="204,226,0,0" VerticalAlignment="Top" Width="54"/>

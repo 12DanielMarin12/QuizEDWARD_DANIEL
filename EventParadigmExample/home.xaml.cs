@@ -22,11 +22,27 @@ namespace EventParadigmExample
         {
             InitializeComponent();
         }
+        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            string porfa = pres.Text;
+
+        }
+        private void che1_Checked(object sender, RoutedEventArgs e)
+        {
+            lblCategory.Content = che1.Content.ToString();
+            shuchu.Content = lblCategory.Content;
+        }
+
+        private void che2_Checked(object sender, RoutedEventArgs e)
+        {
+            lblCategory.Content = che2.Content.ToString();
+            shuchu.Content = lblCategory.Content;
+        }
 
         private void btnSave_Click(object sender, RoutedEventArgs e)
         {
             string v = txtProductName.Text;
-            shuchu.Content = shuchu.Content + "\n" + v;
+            shuchu.Content = shuchu.Content + "\n" + "$" + pres.Text + " " + v; 
             txtResults.Text = shuchu.Content.ToString();
         }
 
