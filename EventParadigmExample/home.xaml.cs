@@ -25,20 +25,13 @@ namespace EventParadigmExample
 
         private void btnSave_Click(object sender, RoutedEventArgs e)
         {
-            String productName = txtProductName.Text;
-            String category = lblCategory.Content.ToString(); 
-
-
-            txtResults.Text = productName+"\n"+category;
+            string v = txtProductName.Text;
+            shuchu.Content = shuchu.Content + "\n" + v;
+            txtResults.Text = shuchu.Content.ToString();
         }
 
-        private void RadioButton_Checked(object sender, RoutedEventArgs e)
-        {
-            RadioButton rb = sender as RadioButton;
-            if (rb.IsChecked.Value)
-            {
-                lblCategory.Content= rb.Content.ToString();
-            }
-        }
+
+        
+
     }
 }
