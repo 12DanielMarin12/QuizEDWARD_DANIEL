@@ -45,9 +45,13 @@ namespace EventParadigmExample
             shuchu.Content = shuchu.Content + "\n" + "$" + pres.Text + " " + v; 
             txtResults.Text = shuchu.Content.ToString();
         }
+        private void btnSalida_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new login());
+        }
 
 
-        
+
 
     }
 }
